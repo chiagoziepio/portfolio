@@ -1,0 +1,35 @@
+header{
+    width: 100vw;
+    display: flex;
+    flex-wrap:nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background-color: black;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+nav ul a li{
+    display: inline-block;
+    margin: 9px;
+    position: relative;
+    font-size: 20px;
+}
+nav ul a li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 15px;
+    color: blueviolet;
+}
