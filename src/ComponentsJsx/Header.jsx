@@ -5,12 +5,6 @@ import '../ComponentsCss/Header.css'
 const Header = () => {
   return (
     <motion.header
-    initial={{
-      y:-20
-    }}
-    animate={{
-      y:0
-    }}
     
     >
         <Logo/>

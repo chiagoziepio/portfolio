@@ -13,6 +13,7 @@ header{
     top: 0;
     z-index: 9;
     box-shadow: 0 0 80px rgba(0,0,0,0.2);
+    min-height: 60px;
 }
 .logo{
     font-family: "Cedarville Cursive", cursive;

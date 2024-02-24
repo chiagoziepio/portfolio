@@ -1,8 +1,22 @@
 import React from 'react'
-
+import { motion } from 'framer-motion'
 const Nav = () => {
   return (
-    <nav>
+    <motion.nav
+    initial={{
+      display:"none",
+      y:-20
+     }}
+     animate={{
+       display:"block",
+       y:0
+     }}
+     transition={{
+       duraton:4,
+       ease:"easeIn",
+       delay:3
+     }}
+    >
       <ul>
         <a href="#home">
           <li>Home</li>
@@ -17,7 +31,7 @@ const Nav = () => {
           <li>Contact me</li>
         </a>
       </ul>
-    </nav>
+    </motion.nav>
   )
 }
 

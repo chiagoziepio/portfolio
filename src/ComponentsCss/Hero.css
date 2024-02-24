@@ -1,12 +1,28 @@
 .hero{
-    
-    padding: 20px 15px;
+    margin-top: 40px;
+    padding: 35px 15px;
+    position: relative;
+}
+.hero::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    width: 35%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: -10000;
+    opacity: .1;
+    background:linear-gradient(40deg ,purple , blueviolet);
 }
 .hero_img{
    
     border-radius: 30px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    min-height: 360px;
+    margin: 10px 0;
 }
  .mainPics{
     width: 300px;
@@ -30,4 +46,38 @@
     flex-direction: column;
     gap: 20px;
 
+}
+.heroUpperPart,
+.HeroLowerpart{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 50px;
+    position: relative;
+}
+.heroUpperPart::after,
+.HeroLowerpart::after{
+    content: "";
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    left: 70px;
+    background: linear-gradient(40deg ,purple , blueviolet);
+    z-index: -1000;
+    opacity: .1234;
+}.heroUpperPart h2,
+.HeroLowerpart h4{
+    width: 50%;
+    line-height:25px;
+    font-size: 20px;
+}
+.heroUpperPart h2 .name{
+    font-weight: 800;
+    font-size: 27px;
+    color:blueviolet;
+}
+.heroUpperPart h2 .category{
+   font-weight: 800;
+   color: #7e61e7;
 }
