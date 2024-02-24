@@ -1,0 +1,33 @@
+.hero{
+    
+    padding: 20px 15px;
+}
+.hero_img{
+   
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+ .mainPics{
+    width: 300px;
+    max-width: 330px;
+    height: 330px;
+    display: block;
+    border-radius: 40px;
+    margin-inline: 20px;
+}
+.icons{
+    width: 50px;
+    height:50px ;
+    border-radius: 7px;
+    transition: transform .3s ease;
+}
+.icons:hover{
+    transform: translateY(-3px);
+}
+.dev_icons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}

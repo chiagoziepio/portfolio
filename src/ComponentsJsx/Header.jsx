@@ -1,12 +1,21 @@
 import Logo from './Logo'
 import Nav from './Nav'
+import { motion } from 'framer-motion'
 import '../ComponentsCss/Header.css'
 const Header = () => {
   return (
-    <header>
+    <motion.header
+    initial={{
+      y:-20
+    }}
+    animate={{
+      y:0
+    }}
+    
+    >
         <Logo/>
         <Nav/>
-    </header>
+    </motion.header>
   )
 }
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 header{
     width: 100vw;
     display: flex;
@@ -5,7 +7,17 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 10px 25px;
-    background-color: black;
+    background-color:#333;
+    opacity: 0.9;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    box-shadow: 0 0 80px rgba(0,0,0,0.2);
+}
+.logo{
+    font-family: "Cedarville Cursive", cursive;
+    user-select: none;
+    font-size: 25px;
     
 }
 nav{
@@ -13,9 +25,11 @@ nav{
     justify-content: space-between;
 }
 nav ul a{
+    font-family: "Kode Mono", monospace;
     list-style: none;
-    color: white;
+    color:rgba(255, 255, 255, 0.808);
     text-decoration: none;
+    transition: color .3s ease;
 }
 nav ul a li{
     display: inline-block;
@@ -27,9 +41,16 @@ nav ul a li::after{
     content: "";
     position: absolute;
     left: 0;
-    right: 0;
     bottom: -6px;
+    width: 0;
+    height: 3px;
+    background: #7e61e7;
+    transition: .3s;
+}
+nav ul a:hover{
+    color: white;
+}
+nav ul a li:hover::after{
     width: 100%;
-    height: 15px;
-    color: blueviolet;
+    
 }
