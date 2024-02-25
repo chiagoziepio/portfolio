@@ -24,6 +24,11 @@
     min-height: 360px;
     margin: 10px 0;
 }
+.main-container{
+    width: 350px;
+    max-width: 330px;
+    height: 330px;
+}
  .mainPics{
     width: 300px;
     max-width: 330px;
@@ -80,4 +85,65 @@
 .heroUpperPart h2 .category{
    font-weight: 800;
    color: #7e61e7;
+}
+.heroUpperPart .cv{
+    color: white;
+    text-decoration: none;
+    background: #7e61e7;
+    padding: 7px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0 0 0px rgba(0,0,0,0.4);
+    transition: scale .3s ease;
+}
+.HeroLowerpart .mail:hover > .mail_icon,
+.heroUpperPart .cv:hover > .download_icon{
+    transform: translateY(3px);
+}
+.heroUpperPart .cv::after{
+    content: "";
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    right: 70px;
+    background: linear-gradient(40deg ,purple , blueviolet);
+    z-index: -1000;
+    opacity: .1234;
+}
+.HeroLowerpart .mail .mail_icon,
+.heroUpperPart .cv .download_icon{
+    margin-right: 5px;
+    color: purple;
+    transition: transform .3s ease;
+}
+.HeroLowerpart .mail{
+    color: white;
+    width: 100px;
+    text-decoration: none;
+    background: blueviolet;
+    padding: 7px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0 0 0px rgba(0,0,0,0.4);
+    transition: scale .3s ease;
+}
+.HeroLowerpart .mail::after{
+    content: "";
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    position: absolute;
+    top: -90px;
+    right: 140px;
+    background: linear-gradient(40deg ,purple , blueviolet);
+    z-index: -1000;
+    opacity: .1234;
 }
