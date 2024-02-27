@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -7,5 +8,17 @@ body{
     background:rgba(0, 0, 0, 0.836);
     color: white;
     font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
    
+}
+.sectionTitle{
+    text-align: center;
+    font-weight: 700;
+    font-family: "Kode Mono", monospace;
+    font-size: 27px;
+}
+.sectionTitle .firstLetter{
+    color: blueviolet;
+    font-size: 32px;
+    font-weight: 900;
 }
