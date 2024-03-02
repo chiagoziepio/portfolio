@@ -1,0 +1,66 @@
+.projects{
+    margin-top: 20px;
+    padding: 20px;
+}
+.container{
+   
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.projectBx{
+    width: 320px;
+    background:linear-gradient(50deg, rgba(0, 0, 0, 0.74), rgba(128, 0, 128, 0.466));
+    padding: 8px;
+    margin: 15px;
+    border-radius: 20px;
+}
+.project_img{
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    height: 250px;
+   margin-bottom: 10px;
+   box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+    border-radius:15px ;
+    margin-left:4px;
+    
+}
+.project_detail{
+    font-size: 19px;
+    margin-bottom: 10px;
+    color: rgba(245, 245, 245, 0.87);
+}
+.projectBx span{
+    font-size: 16px;
+    color: rgba(245, 245, 245, 0.534);
+    
+}
+.projectLinks{
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.live{
+    background:linear-gradient(50deg, rgba(0, 0, 0, 0.459), rgba(255, 37, 255, 0.836));
+    color: white;
+    padding: 8px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all  .3s ease;
+}
+.live:hover{
+    background:linear-gradient(50deg, rgba(0, 0, 0, 0.507), rgba(255, 37, 255, 0.705));
+}
+.git{
+    background:linear-gradient(70deg, rgba(0, 0, 0, 0.767), rgba(255, 37, 255, 0.637));
+    color: white;
+    padding: 8px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all  .3s ease;
+}
+.git:hover{
+    background:linear-gradient(70deg, rgba(0, 0, 0, 0.644), rgba(255, 37, 255, 0.733));
+}

@@ -4,11 +4,14 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background:rgba(0, 0, 0, 0.836);
     color: white;
     font-family: "Roboto", sans-serif;
-    scroll-behavior: smooth;
+    
    
 }
 .sectionTitle{
