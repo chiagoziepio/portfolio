@@ -4,6 +4,7 @@ import Hero from './ComponentsJsx/Hero'
 import Stack from './ComponentsJsx/Stack'
 import Projects from './ComponentsJsx/Projects'
 import {datas} from './ComponentsJsx/ProjectData'
+import Contact from './ComponentsJsx/Contact'
 
 function App() {
   const [data, setData] = useState([]);
@@ -16,6 +17,7 @@ function App() {
         <Hero/>
         <Stack/>
         <Projects data={data}/>
+        <Contact/>
     </div>
   )
   
