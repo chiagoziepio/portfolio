@@ -5,6 +5,7 @@ import Stack from './ComponentsJsx/Stack'
 import Projects from './ComponentsJsx/Projects'
 import {datas} from './ComponentsJsx/ProjectData'
 import Contact from './ComponentsJsx/Contact'
+import Footer from './ComponentsJsx/Footer'
 
 function App() {
   const [data, setData] = useState([]);
@@ -18,6 +19,7 @@ function App() {
         <Stack/>
         <Projects data={data}/>
         <Contact/>
+        <Footer/>
     </div>
   )
   
