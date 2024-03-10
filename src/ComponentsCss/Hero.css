@@ -148,3 +148,36 @@
     z-index: -1000;
     opacity: .1234;
 }
+@media (max-width:620px){
+    .heroUpperPart .cv, 
+    .HeroLowerpart .mail{
+        display: none;
+    }
+    .heroUpperPart,
+.HeroLowerpart{
+    display: block;
+    padding-inline: 15px;
+}
+.heroUpperPart h2,
+.HeroLowerpart h4{
+    width: 80%;
+}
+
+.hero_img{
+    display: flex;
+    flex-direction: column;
+}
+
+.dev_icons{
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0;
+    z-index: 100;
+}
+.hero::after{
+    top: 120px;
+    width: 75%;
+    height: 70%;
+}
+}
+

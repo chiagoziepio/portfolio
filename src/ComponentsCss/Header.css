@@ -57,7 +57,7 @@ header{
 }
 .menu{
     display: none;
-    background: linear-gradient(30deg, rgba(0, 0, 0, 0.493), rgba(82, 4, 82, 0.432));
+    background: linear-gradient(60deg, rgb(0, 0, 0), rgb(61, 4, 61));
     border-radius: 10px;
 }
 .menu .menuBtn{

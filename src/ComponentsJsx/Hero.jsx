@@ -38,7 +38,7 @@ const Hero = () => {
   return (
     <section className='hero' id='home'>
         <div className='heroUpperPart'>
-            <h2>Hi am <span className='name'>CHRISTOPHER</span><br /> A deligient and dedicated <span className='category'>Frontend developer</span></h2>
+            <h2>Hi I am <span className='name'>CHRISTOPHER</span><br /> A deligient and dedicated <span className='category'>Frontend developer</span></h2>
             <button onClick={download} className='cv' ><FaCloudDownloadAlt size={20}className='download_icon'/> Resume</button>
         </div>
         <div className="hero_img">

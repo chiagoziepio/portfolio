@@ -17,3 +17,8 @@ footer a{
 .footer_icon{
     margin-right: 5px;
 }
+@media(max-width:620px){
+    footer{
+        flex-direction: column;
+    }
+}
