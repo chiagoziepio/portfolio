@@ -8,33 +8,23 @@ const Hero = () => {
     const firstUrl = "https://onedrive.live.com/embed?resid=D32039EB0B48BA39%21342&authkey=!AOrdpzejnKoZj-I&em=2";
     const secondUrl = "https://1drv.ms/b/s!Ajm6SAvrOSDTglba_64T-kZOpOYc?e=tbmPuG"
     const download =  ()=>{
-        /* const theLink = await fetch(secondUrl)
-        const blob = await theLink.blob()
-        console.log(blob); */
 
-        fetch(firstUrl,{
-            mode:"same-origin"
-        }).then((response) => {
+        fetch(firstUrl).then((response) => {
             response.blob().then((blob) => {
              
                 // Creating new object of PDF file
-                const fileURL =
-                    window.URL.createObjectURL(blob);
+             const fileURL = window.URL.createObjectURL(blob);
                      
                 // Setting various property values
                 let alink = document.createElement("a");
                 alink.href = fileURL;
-                alink.download = "SamplePDF.pdf";
+                alink.download = "nduaguba chiagozie developer cv.pdf";
                 alink.click();
             })
             })
-        /* const blob = new Blob(["checking out"],{type: "text/plain"})
-        const a = document.createElement("a");
-        a.href = URL.createObjectURL(blob)
-        a.download = "nduaguba chiagozie developer cv.txt"
-        a.click() */
+       
     }
-    //"https://onedrive.live.com/embed?resid=D32039EB0B48BA39%21342&authkey=!AOrdpzejnKoZj-I&em=2" https://1drv.ms/b/s!Ajm6SAvrOSDTglba_64T-kZOpOYc?e=tbmPuG
+    
   return (
     <section className='hero' id='home'>
         <div className='heroUpperPart'>
