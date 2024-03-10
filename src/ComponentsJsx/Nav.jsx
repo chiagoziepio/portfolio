@@ -1,8 +1,10 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-const Nav = () => {
+import { BiMenuAltRight } from "react-icons/bi";
+const Nav = ({Handle_menuShow}) => {
   return (
     <motion.nav
+    className='lx_nav'
     initial={{
       display:"none",
       y:-20
@@ -31,6 +33,9 @@ const Nav = () => {
           <li>Contact me</li>
         </a>
       </ul>
+      <div className="menu" onClick={Handle_menuShow}>
+      <BiMenuAltRight className='menuBtn' size={40}/>
+      </div>
     </motion.nav>
   )
 }

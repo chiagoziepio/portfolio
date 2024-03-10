@@ -21,24 +21,24 @@ header{
     font-size: 25px;
     
 }
-nav{
+.lx_nav{
     display: flex;
     justify-content: space-between;
 }
-nav ul a{
+.lx_nav ul a{
     font-family: "Kode Mono", monospace;
     list-style: none;
     color:rgba(255, 255, 255, 0.808);
     text-decoration: none;
     transition: color .3s ease;
 }
-nav ul a li{
+.lx_nav ul a li{
     display: inline-block;
     margin: 9px;
     position: relative;
     font-size: 20px;
 }
-nav ul a li::after{
+.lx_nav ul a li::after{
     content: "";
     position: absolute;
     left: 0;
@@ -48,10 +48,26 @@ nav ul a li::after{
     background: #7e61e7;
     transition: .3s;
 }
-nav ul a:hover{
+.lx_nav ul a:hover{
     color: white;
 }
-nav ul a li:hover::after{
+.lx_nav ul a li:hover::after{
     width: 100%;
     
+}
+.menu{
+    display: none;
+    background: linear-gradient(30deg, rgba(0, 0, 0, 0.493), rgba(82, 4, 82, 0.432));
+    border-radius: 10px;
+}
+.menu .menuBtn{
+    color:white;
+}
+@media (max-width:620px){
+    .lx_nav ul{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
 }

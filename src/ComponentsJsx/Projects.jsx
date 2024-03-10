@@ -9,7 +9,7 @@ const Projects = ({data}) => {
       <h2 className="sectionTitle"><span className="firstLetter">P</span>rojects</h2>
       <div className="container">
         {data.map(dat=>(
-          <motion.div className="projectBx"
+          <motion.div key={dat.id} className="projectBx"
             initial={{
               opacity:0
             }}

@@ -87,6 +87,7 @@
    color: #7e61e7;
 }
 .heroUpperPart .cv{
+    
     color: white;
     text-decoration: none;
     background: #7e61e7;
@@ -123,7 +124,7 @@
 }
 .HeroLowerpart .mail{
     color: white;
-    width: 100px;
+    width: 120px;
     text-decoration: none;
     background: blueviolet;
     padding: 7px;

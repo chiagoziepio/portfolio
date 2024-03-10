@@ -1,5 +1,6 @@
  export const datas = [
     {
+        id:1,
         img: "img/shoe.png",
         name: "Shoe castle",
         des:"An E-commerce website built with React js, CSS with libraries like react-icon, react-router-dom.",
@@ -8,6 +9,7 @@
         instruction: true
     },
     {
+        id:2,
         img: "img/trending.png",
         name: "Trendings.co",
         des:"A blog website built with React js,CSS with libraries that include date-fns, react-router-dom, react-icon",
@@ -16,6 +18,7 @@
         instruction: false
     },
     {
+        id:3,
         img: "img/todo.png",
         name: "Todo web App",
         des:"A Todo web App built with React js, with the inclusion of date-fns library",

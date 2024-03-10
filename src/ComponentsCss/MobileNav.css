@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+.mobileNav{
+    position:fixed;
+    top: 70px;
+    left: 0;
+    height: 100%;
+    
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10000;
+    background: linear-gradient(60deg, rgb(0, 0, 0), rgb(61, 4, 61));
+    padding: 10px;
+}
+.mobileNav .altNav ul{
+    list-style: none;
+    margin-bottom: 25px;
+    
+}
+.mobileNav .altNav ul a{
+    font-family: "Kode Mono", monospace;
+    list-style: none;
+    color:rgba(255, 255, 255, 0.808);
+    text-decoration: none;
+}
+.mobileNav .altNav ul a li{
+    margin: 15px 0;
+   
+}
+.cv_mail{
+    display: flex;
+    flex-direction: column
+}
+.cv_mail .cv{
+    background:white;
+    padding: 7px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+.cv_mail a{
+    background:rgba(255, 255, 255, 0.767);
+    padding: 7px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    font-size: 19px;
+    color: black;
+
+}
+.cv_mail a .mail_icon{
+    margin-right: 5px;
+    color: rgba(128, 0, 128, 0.808);
+}

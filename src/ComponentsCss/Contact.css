@@ -9,7 +9,7 @@
     justify-content: center;
     margin-top: 35px;
 }
-.link{
+.linksBx .link{
     width:36%;
     min-width: 200px;
     max-width: 300px;
@@ -22,7 +22,7 @@
     color: rgba(255, 255, 255, 0.712);
     text-decoration: none;
 }
-.link_icon{
+.linksBx .link .link_icon{
     margin-right: 5px;
     color: rgba(137, 43, 226, 0.534);
 }
