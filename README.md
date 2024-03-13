@@ -17,3 +17,6 @@ html
 https://i.pinimg.com/236x/b1/75/54/b175549d8268dd656b92e3b56988bdf9.jpg
 react
 https://i.pinimg.com/236x/5b/fa/e3/5bfae33bcc5e5efda6aaef3a8c83a174.jpg
+
+heroimg
+https://drive.google.com/file/d/1DkBsmNIk40Y6ZJclR_WeDAvuqX4EtIni/preview" 

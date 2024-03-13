@@ -22,7 +22,7 @@ const Stack = () => {
         ><span className="firstLetter">M</span>y <span className="secLetter">S</span>tack</motion.h2>
         <div className="stackContainer">
             <div className='stackBx'>
-                <img src="img/react.jpg" alt="" />
+                <img src="https://i.pinimg.com/236x/5b/fa/e3/5bfae33bcc5e5efda6aaef3a8c83a174.jpg" alt="" />
                 <div className="progressBarBx">
                     <motion.div className="progressBar reactbar"
                         initial={{
@@ -38,7 +38,7 @@ const Stack = () => {
                 </div>
             </div>
             <div className='stackBx'>
-                <img src="img/js.jpg" alt="" />
+                <img src="https://i.pinimg.com/236x/1e/e5/c0/1ee5c08f80a1c61d66a37fa64c2d984c.jpg" alt="" />
                 <div className="progressBarBx">
                     <motion.div className="progressBar jsbar"
                         initial={{
@@ -54,7 +54,7 @@ const Stack = () => {
                 </div>
             </div>
             <div className='stackBx'>
-                <img src="img/CSS3.jpg" alt="" />
+                <img src="https://i.pinimg.com/236x/17/65/0d/17650db87fb5752364a9a4b6885290ac.jpg" alt="" />
                 <div className="progressBarBx">
                     <motion.div className="progressBar cssbar"
                         initial={{
@@ -70,7 +70,7 @@ const Stack = () => {
                 </div>
             </div>
             <div className='stackBx'>
-                <img src="img/html.jpg" alt="" />
+                <img src="https://i.pinimg.com/236x/b1/75/54/b175549d8268dd656b92e3b56988bdf9.jpg" alt="" />
                 <div className="progressBarBx">
                     <motion.div className="progressBar htmlbar"
                         initial={{
@@ -86,7 +86,7 @@ const Stack = () => {
                 </div>
             </div>
             <div className='stackBx'>
-                <img src="img/booststrap.jpg" alt="" />
+                <img src="https://i.pinimg.com/236x/29/37/2a/29372aa493607af0848468d30223ccc6.jpg" alt="" />
                 <div className="progressBarBx">
                     <motion.div className="progressBar bsbar"
                         initial={{
