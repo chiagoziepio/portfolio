@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer>
         <p>Paddy &copy; {year.getFullYear()}</p>
-        <a href=""><FaGithub size={25} className='footer_icon'/>Checkout source code</a>
+        <a href="https://github.com/chiagoziepio/portfolio"><FaGithub size={25} className='footer_icon'/>Checkout source code</a>
     </footer>
   )
 }

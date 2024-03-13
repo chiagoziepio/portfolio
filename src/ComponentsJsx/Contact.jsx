@@ -7,7 +7,7 @@ import { MdAttachEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { motion } from 'framer-motion'
 
-const Contact = () => {
+const Contact = ({download}) => {
   return (
     <section className='contact' id='contact'>
         <motion.h2 
@@ -28,7 +28,7 @@ const Contact = () => {
                 
                 
                     <a href="tel:+2348167344653" className='link'><FaPhoneVolume size={25} className='link_icon'/>Call me</a>
-                    <a href='#' className='link'><FaCloudDownloadAlt size={25}className='link_icon'/> Resume</a>
+                    <button className='link'><FaCloudDownloadAlt size={25}className='link_icon'/> Resume</button>
                     <a href="mailto:christopherpaddy2017@gmail.com" className='link'><MdAttachEmail className='link_icon' size={25}/>mail me</a>
                 
         </div>

@@ -4,11 +4,12 @@ import { FaCloudDownloadAlt } from "react-icons/fa";
 import { MdAttachEmail } from "react-icons/md";
 import '../ComponentsCss/MobileNav.css'
 
-const MobileNav = ({isOpen}) => {
+const MobileNav = ({isOpen, download, Handle_menuShow}) => {
   return (
     <>
     {isOpen &&
         <motion.div className='mobileNav'
+        onClick={Handle_menuShow}
          initial={{
             width:0
          }}
@@ -37,7 +38,7 @@ const MobileNav = ({isOpen}) => {
                 </ul>
             </nav>
             <div className="cv_mail">
-                <button className='cv' ><FaCloudDownloadAlt size={20}className='download_icon'/> Resume</button>
+                <button className='cv' onClick={download} ><FaCloudDownloadAlt size={20}className='download_icon'/> Resume</button>
                 <a href="mailto:christopherpaddy2017@gmail.com" className='mail'><MdAttachEmail className='mail_icon' size={20}/>mail me</a>
             </div>
         </motion.div>

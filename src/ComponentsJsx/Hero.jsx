@@ -4,26 +4,7 @@ import { FaCloudDownloadAlt } from "react-icons/fa";
 import { MdAttachEmail } from "react-icons/md";
 import { motion } from 'framer-motion'
 
-const Hero = () => {
-    const firstUrl = "https://onedrive.live.com/embed?resid=D32039EB0B48BA39%21342&authkey=!AOrdpzejnKoZj-I&em=2";
-    const secondUrl = "https://1drv.ms/b/s!Ajm6SAvrOSDTglba_64T-kZOpOYc?e=tbmPuG"
-    const download =  ()=>{
-
-        fetch(firstUrl).then((response) => {
-            response.blob().then((blob) => {
-             
-                // Creating new object of PDF file
-             const fileURL = window.URL.createObjectURL(blob);
-                     
-                // Setting various property values
-                let alink = document.createElement("a");
-                alink.href = fileURL;
-                alink.download = "nduaguba chiagozie developer cv.pdf";
-                alink.click();
-            })
-            })
-       
-    }
+const Hero = ({download}) => {
     
   return (
     <section className='hero' id='home'>

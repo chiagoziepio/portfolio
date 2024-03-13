@@ -21,6 +21,7 @@
     text-align: center;
     color: rgba(255, 255, 255, 0.712);
     text-decoration: none;
+    border: none;
 }
 .linksBx .link .link_icon{
     margin-right: 5px;

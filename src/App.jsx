@@ -10,12 +10,29 @@ import MobileNav from './ComponentsJsx/MobileNav'
 
 function App() {
   const [data, setData] = useState([]);
-  const [isOpen, setIsopen] = useState(false)
+  const [isOpen, setIsopen] = useState(false);
+  const thirdUrl = "https://drive.google.com/file/d/1NoBYp4iPBB-op7kZ8Fex_g2ct-4UKcRV/view?usp=sharing";
   const Handle_menuShow= ()=>{
     
     setIsopen(!isOpen)
-    
+    if(isOpen){
+      document.body.style.overflow = "scroll"
+    }else{
+      document.body.style.overflow = "hidden"
+    }
   }
+  const download =  ()=>{
+
+    
+    fetch(thirdUrl).then(resp => resp.blob()).then(blob => {
+        let fileURL = URL.createObjectURL(blob)
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "nduaguba chiagozie christopher dev cv.pdf";
+        alink.click();
+    }) 
+    
+}
   
   useEffect(()=>{
       setData(datas)
@@ -23,11 +40,11 @@ function App() {
   return(
     <div className='app'>
         <Header Handle_menuShow={Handle_menuShow}/>
-        <Hero/>
+        <Hero download={download}/>
         <Stack/>
         <Projects data={data}/>
-        <Contact/>
-        <MobileNav isOpen={isOpen}/>
+        <Contact download={download}/>
+        <MobileNav isOpen={isOpen} download={download} Handle_menuShow={Handle_menuShow}/>
         <Footer/>
     </div>
   )
