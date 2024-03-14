@@ -28,7 +28,7 @@ function App() {
         let fileURL = URL.createObjectURL(blob)
         let alink = document.createElement("a");
         alink.href = fileURL;
-        alink.download = "nduaguba chiagozie christopher dev cv.pdf";
+        alink.download = "nduaguba chiagozie christopher dev cv";
         alink.click();
     }) 
     
