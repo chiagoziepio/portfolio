@@ -15,21 +15,21 @@ function App() {
   const Handle_menuShow= ()=>{
     
     setIsopen(!isOpen)
-    if(isOpen){
-      document.body.style.overflow = "scroll"
-    }else{
-      document.body.style.overflow = "hidden"
-    }
   }
   const download =  ()=>{
 
     
     fetch(thirdUrl).then(resp => resp.blob()).then(blob => {
-        let fileURL = URL.createObjectURL(blob)
+        
         let alink = document.createElement("a");
+        let fileURL = URL.createObjectURL(blob)
+        alink.style.display= "none";
         alink.href = fileURL;
-        alink.download = "nduaguba chiagozie christopher dev cv.pdf";
+        alink.download = "nduaguba_chiagozie_dev_cv.pdf";
+        document.body.appendChild(alink);
         alink.click();
+        document.body.removeChild(alink);
+        window.URL.revokeObjectURL(fileURL);
     }) 
     
 }
