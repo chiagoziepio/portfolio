@@ -12,14 +12,24 @@ function App() {
   const [data, setData] = useState([]);
   const [isOpen, setIsopen] = useState(false);
   const thirdUrl = "https://drive.google.com/file/d/1Al4_eiuiPgtEJuR-bEe-DQG5xtcCSZbj/view?usp=sharing";
+  const linkUrl = "https://drive.google.com/uc?export=download&id=1Al4_eiuiPgtEJuR-bEe-DQG5xtcCSZbj"
   const Handle_menuShow= ()=>{
     
     setIsopen(!isOpen)
+    if(!isOpen){
+      document.body.classList.add("stop")
+    }else{
+      document.body.classList.remove("stop")
+    }
   }
   const download =  ()=>{
-
-    
-    fetch(thirdUrl).then(resp => resp.blob()).then(blob => {
+    const a = document.createElement('a');
+    document.body.appendChild(a)
+    a.href = linkUrl
+    a.download = "chiagozie_cv.pdf"
+    a.click()
+    document.body.removeChild(a)    
+    /* fetch('http://localhost:3000/proxy').then(resp => resp.blob()).then(blob => {
         
         let alink = document.createElement("a");
         let fileURL = URL.createObjectURL(blob)
@@ -30,7 +40,7 @@ function App() {
         alink.click();
         document.body.removeChild(alink);
         window.URL.revokeObjectURL(fileURL);
-    }) 
+    })  */
     
 }
   
