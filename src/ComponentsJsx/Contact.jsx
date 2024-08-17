@@ -28,7 +28,7 @@ const Contact = ({download}) => {
                 
                 
                     <a href="tel:+2348167344653" className='link'><FaPhoneVolume size={25} className='link_icon'/>Call me</a>
-                    <button className='link'><FaCloudDownloadAlt size={25}className='link_icon'/> Resume</button>
+                    <button className='link' onClick={download}><FaCloudDownloadAlt size={25}className='link_icon'/> Resume</button>
                     <a href="mailto:christopherpaddy2017@gmail.com" className='link'><MdAttachEmail className='link_icon' size={25}/>mail me</a>
                 
         </div>
